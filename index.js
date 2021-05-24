@@ -11,6 +11,8 @@ mongoose
     .connect(process.env.MONGOOSE_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true,
     })
     .then(() => {
         
