@@ -11,9 +11,9 @@
 <hr>
 
 ## Links
-* [Submission Pull Request](https://github.com/ahmad-arman/api-server/pull/1)
-* [Deployed App](https://ahmadapi-server.herokuapp.com/)
-* [Error Report](https://github.com/ahmad-arman/api-server/actions)
+* [Submission Pull Request](https://github.com/ahmad-arman/basic-auth/pull/1)
+* [Deployed App](https://git.heroku.com/ahmad-basic-auth.git)
+* [Error Report](https://github.com/ahmad-arman/basic-auth/actions)
 <hr>
 
 ## Setup
