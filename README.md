@@ -12,7 +12,7 @@
 
 ## Links
 * [Submission Pull Request](https://github.com/ahmad-arman/basic-auth/pull/1)
-* [Deployed App](https://git.heroku.com/ahmad-basic-auth.git)
+* [Deployed App](https://ahmad-basic-auth.herokuapp.com/)
 * [Error Report](https://github.com/ahmad-arman/basic-auth/actions)
 <hr>
 
