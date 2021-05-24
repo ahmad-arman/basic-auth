@@ -1,5 +1,5 @@
 'use strict';
-require('dotenv').config();
+// require('dotenv').config();
 const base64 = require("base-64");
 const supertest = require('supertest');
 const router =require('../src/auth/router')
