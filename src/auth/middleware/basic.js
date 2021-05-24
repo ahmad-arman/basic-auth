@@ -62,7 +62,7 @@ const authenticate =require('../models/users-model')
       console.log('user',user);
       // console.log("aaaaaaaaaa" ,authenticate(password));
       const valid = await bcrypt.compare(password, user.password);
-      // user.authenticate(password);
+      // user.isPasswordMach(password);
       
       if (valid) {
         req.user = user;

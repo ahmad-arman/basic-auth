@@ -11,6 +11,8 @@
 <hr>
 
 ## Links
+* (link heroku ready to test on postman)[https://ahmad-basic-auth.herokuapp.com/api/v1/signup]
+* (link heroku ready to test on postman)[https://ahmad-basic-auth.herokuapp.com/api/v1/signin]
 * [Submission Pull Request](https://github.com/ahmad-arman/basic-auth/pull/1)
 * [Deployed App](https://ahmad-basic-auth.herokuapp.com/)
 * [Error Report](https://github.com/ahmad-arman/basic-auth/actions)
@@ -22,7 +24,8 @@
 PORT = 3000
 MONGOOSE_URI = mongodb://localhost:27017/people
 
- MONGOOSE_TEST_URI = mongodb+srv://ahmad:eng.ahmad123@cluster0.kilwd.mongodb.net/infUser?retryWrites=true&w=majority
+MONGOOSE_URI = mongodb+srv://ahmad:eng.ahmad123@cluster0.kilwd.mongodb.net/infUser?retryWrites=true&w=majority
+MONGOOSE_TEST_URI = mongodb+srv://ahmad:eng.ahmad123@cluster0.kilwd.mongodb.net/testing?retryWrites=true&w=majority
 ```
 2. Install the following dependencies
 ```
