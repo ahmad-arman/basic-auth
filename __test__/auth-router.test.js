@@ -32,6 +32,9 @@ describe('router ', () => {
     // afterAll(() => {// we need to close the connection after tests
     //     mongoose.connection.close();
     //   });
+    afterAll(() => {// we need to close the connection after tests
+        mongoose.connection.close();
+      });
   
     it('POST to /signup to create a new user', async () => {
         //arrange

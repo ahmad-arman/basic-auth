@@ -27,7 +27,9 @@ mongoose.connect(process.env.MONGOOSE_TEST_URI, {
 
 describe('route', ()=>{
 
-   
+    afterAll(() => {// we need to close the connection after tests
+        mongoose.connection.close();
+    });
 
     it('POST to / signin to login as a user(use basic auth)', async () => {
         //arrange
