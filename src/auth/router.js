@@ -26,7 +26,7 @@ async function signUp(req,res){
 
     try {
         const { username, password } = req.body;
-        const hash = await bcrypt.hash(password, 10);
+         const hash = await bcrypt.hash(password, 10);
         const user = new User({ username, password: hash });
         const record = await user.save();
         res.status(201).json(record);

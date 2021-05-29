@@ -11,10 +11,16 @@ const userScehma = new mongoose.Schema({
 const Users = mongoose.model('User', userScehma);
 
 userScehma.pre('save', async (next) => {
-    // do stuff
-    let encryptedPass = await bcrypt.hash(this.password, 10)
-     this.password = encryptedPass;
-    next();
+    // do stuff.
+    try {
+        let encryptedPass = await bcrypt.hash(this.password, 10)
+        this.password = encryptedPass;
+        console.log('pre save :', this.password)
+       next();
+    } catch (error) {
+        console.error(error.massage)
+    }
+   
 });
 
 // userScehma.methods.authenticate = (password)=> {
