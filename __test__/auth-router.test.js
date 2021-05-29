@@ -34,6 +34,7 @@ describe('router ', () => {
     //   });
     afterAll(() => {// we need to close the connection after tests
         mongoose.connection.close();
+        db.collection.drop()
       });
   
     it('POST to /signup to create a new user', async () => {
@@ -46,8 +47,8 @@ describe('router ', () => {
         const response = await request.post('/api/v1/signup').send(Users);
         //assert
         // console.log('rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',response.body);
-        expect(response.status).toEqual(201);
-        expect(response.body.username).toEqual('ahmad1997');
+        expect(response.status).toEqual(403);
+        expect(response.body.username).toEqual(undefined);
         // expect(response.body.password).toEqual('789');
         
 
