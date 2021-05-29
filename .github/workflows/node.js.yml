@@ -1,7 +1,6 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-
 name: Node.js CI
 on: [push, pull_request]
 jobs:
@@ -27,6 +26,6 @@ jobs:
     - run: npm test
       env:
         CI: true
-        MONGOOSE_TEST_URI: mongodb://127.0.0.1:27017/test
+        MONGOOSE_TEST_URI: mongodb+srv://ahmad:eng.ahmad123@cluster0.kilwd.mongodb.net/test-basic-auth
 
 
