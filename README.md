@@ -52,7 +52,8 @@ mongod --dbpath=/Users/path/to/data/db
 - **Response Body**   : JSON
 ```
 [
-    {
+   
+     {
     "user": {
         "_id": "60aae63fbcdc5d6877e732b8",
         "username": "aaaa",
